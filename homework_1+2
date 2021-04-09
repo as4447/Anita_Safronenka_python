@@ -1,1 +1,7 @@
-print(hi)
+# step one: number of symbols is 126# 
+hw="I don't know how is London, I was not there. Maybe, there are dog- man's best friend. Here this is indeed true - man's friend!"
+print(hw)
+I don't know how is London, I was not there. Maybe, there are dog- man's best friend. Here this is indeed true - man's friend!
+len(hw)
+
+
