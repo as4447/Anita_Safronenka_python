@@ -3,5 +3,28 @@ hw="I don't know how is London, I was not there. Maybe, there are dog- man's bes
 print(hw)
 I don't know how is London, I was not there. Maybe, there are dog- man's best friend. Here this is indeed true - man's friend!
 len(hw)
+# step two: turn text around 
+hw[::-1]
+"!dneirf s'nam - eurt deedni si siht ereH .dneirf tseb s'nam -god era ereht ,ebyaM .ereht ton saw I ,nodnoL si woh wonk t'nod I"
+# step three: all capital letters #
+ hw.title()
+ "I Don'T Know How Is London, I Was Not There. Maybe, There Are Dog- Man'S Best Friend. Here This Is Indeed True - Man'S Friend!"
+#step four: - skip# 
+#step five: count letters  nd=4, am=0 o=7#
+hw.count("nd")
+4
+>>> hw.count("am")
+0
+>>> hw.count("o")
+7
+# step six: sentence manipulation#  change to italic 
+txt= "\x1B[3m I don't know how is London, I was not there \x1B[23m"
+print(txt)
+# step seven: paragraph manipulation# 
+hw="I don't know how is London, I was not there.\n Maybe, there are dog- man's best friend.\n Here this is indeed true - man's friend!"
+>>> print(hw)                                                                   
+I don't know how is London, I was not there.
+ Maybe, there are dog- man's best friend.
+ Here this is indeed true - man's friend!
 
 
