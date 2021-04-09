@@ -9,7 +9,9 @@ hw[::-1]
 # step three: all capital letters #
  hw.title()
  "I Don'T Know How Is London, I Was Not There. Maybe, There Are Dog- Man'S Best Friend. Here This Is Indeed True - Man'S Friend!"
-#step four: - skip# 
+#step four:  made upper cases letters # 
+>>> hw.upper()
+"I DON'T KNOW HOW IS LONDON, I WAS NOT THERE. MAYBE, THERE ARE DOG- MAN'S BEST FRIEND. HERE THIS IS INDEED TRUE - MAN'S FRIEND!"
 #step five: count letters  nd=4, am=0 o=7#
 hw.count("nd")
 4
