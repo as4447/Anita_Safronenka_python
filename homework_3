@@ -1,0 +1,60 @@
+# I did it through python however for some reason python won't allow me iniate git and do commit and push through git#
+# I will do it later but I am sumbiting this way so that I can show that I did homework on time# 
+# Here is my hw#
+
+>>> Weight = input("Put in your weight in KG: ")
+Put in your weight in KG: 60
+>>> eight = input("Put in your height in CM: ")
+Put in your height in CM: 165
+>>> Weight = float(Weight)
+>>> Height = float(Height)
+
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    Height = float(Height)
+NameError: name 'Height' is not defined
+>>> Height = input("Put in your height in CM: ")
+Put in your height in CM: 165
+>>> Height = float(Height)
+
+>>> Height_Squared = Height * Height
+>>> BMI_Formula_Assisted = Weight / Height_Squared
+>>> BMI_Formula_Completed = BMI_Formula_Assisted * 10000
+>>> BMI_Formula_Completed = str(BMI_Formula_Completed)
+>>> print("You have a BMI score of " + BMI_Formula_Completed + ".")
+You have a BMI score of 22.038567493112946.
+>>>  BMI_Formula_Completed = float(BMI_Formula_Completed)
+ 
+SyntaxError: unexpected indent
+>>> BMI_Formula_Completed = float(BMI_Formula_Completed)
+>>> if BMI_Formula_Completed <= 20:
+	print("|20============50")
+elif BMI_Formula_Completed <=23:
+	print("20=|==========50")
+elif BMI_Formula_Completed <=26:
+	print("20==|==========50")
+elif BMI_Formula_Completed <=29:
+	print("20===|=========50")
+elif BMI_Formula_Completed  <=30:
+	print("20====|========50")
+elif BMI_Formula_Completed  <=33:
+	print("20=====|=======50")
+elif BMI_Formula_Completed  <=36:
+	print("20======|======50")
+elif BMI_Formula_Completed  <=39:
+	print("20=======|=====50")
+elif BMI_Formula_Completed  <=40:
+	print("20========|====50")
+elif BMI_Formula_Completed  <=43:
+	print("20=========|===50")
+elif BMI_Formula_Completed <=46:
+	print("20==========|==50")
+elif BMI_Formula_Completed <=49:
+	print("20===========|=50")
+elif BMI_Formula_Completed <=50:
+	print("20=============50|")
+else:
+	print("20=============50")
+
+	
+20=|==========50
