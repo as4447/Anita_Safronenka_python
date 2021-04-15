@@ -20,4 +20,5 @@ else: print("Error")
 
 if x>5 or y==7 or c==7:
 	print("Petia")
-else: print ("Error")
+else: 
+    print ("Error")
