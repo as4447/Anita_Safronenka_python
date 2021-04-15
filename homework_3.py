@@ -1,7 +1,8 @@
+
+
 Weight = input("Put in your weight in KG: ")
 Height = input("Put in your height in CM: ")
 Weight = float(Weight)
-Height = float(Height)
 Height = float(Height)
 Height_Squared = Height * Height
 BMI_Formula_Assisted = Weight / Height_Squared
@@ -38,6 +39,7 @@ elif BMI_Formula_Completed <=50:
 	print("20=============50|")
 else:
 	print("20=============50")
+
 
 	
 
