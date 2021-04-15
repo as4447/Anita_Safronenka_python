@@ -1,24 +1,31 @@
-lazy=input(1 and 2 and "No zeros" )
-lazy2=input(1 or 2 or "All zeros")
 
-a=12
-b=6
-c=5
-if a>b+c:
-	print("a-b-c")
-elif a<b+c:
+a = int(input('Enter number'))
+b = int(input('Enter number '))
+c = int(input('Enter number '))
+print(a and b and c and "not zero")
+print(a or b or c or 'all zero')
+
+
+g=int(input("write number"))
+i=int(input("write number"))
+t=int(input("write number"))
+
+if g>i+t:
+	print("a-b-c"):
+else: print("False")
+
+if g<i+t:
 	print("b+c-a")
 else:
-	print(" ")
+	print("None ")
 
-x=60
-y=50 
-c=7 
+x=input(int("put number"))
+y=input(int("put number"))
+z=input(int("put number"))
 
-if x>50 and x>y: print("Vasya")
+if x > 50 and max(y, z) > x: print("Vasya")
 else: print("Error")
-
-if x>5 or y==7 or c==7:
-	print("Petia")
-else: 
+if x>5 and y==7 and z==7:
+    print("Petia")
+else:
     print ("Error")
