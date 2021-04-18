@@ -1,24 +1,15 @@
-your_login=str(input("enter your login: "))
-
-
-def deposit():
-	  amount = float(input("Enter your amount: "))
-	  your.balance+=amount
-	  print("Your amount is:",amount)
+your_login=input("enter your login:"))
 
 def check_login(deposit):
-	def my_wrapper():
-		if login=="Python":
-			deposit()
+	def my_wrapper(*args,**kwargs):
+		if args[0] == "Python":
+			deposit(*args,**kwargs)
 		else:
 			print("You don't have permissions to view a account balance")
-			return my_wrapper
+	return my_wrapper
 
+def get_amount (your_login):
+	  print(f'{your_login} has 200$')
+	
 
-    
-
-
-
-
-
-
+get_amount(your_login)
