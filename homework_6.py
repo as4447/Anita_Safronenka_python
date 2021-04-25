@@ -1,94 +1,33 @@
 
-login={}
-def create_login(*args,**kwargs):
-    global login
-    while True:
-        login=input("Put your login:")
-        if login in login.keys():
-            print("this login already exists")
-        else:   
-            break
+class AddressBook:
+    def __init__(self, name, age, height, weight, sex):
+        self.name = name
+        self.age = age
+        self.height = height
+        self.weight = weight
+        self.sex = sex
+
+#    def calc_bmi(self, weight, height):
+#        bmi = round((self.weight / self.height ** 2), 2)        
+
+    def __str__(self):
+        return ", ".join([self.name, self.age, self.height, self.weight, self.sex])
         
-    d1={"sex": sex, "age": age,"weight": weight, "height":height}
-    height = float(input( "Your heigh:" ))/ 100
-    mass = float(input("Your weight: "))
-    sex = input("Your sex: ")
 
-    Height_Squared = height * height
-    BMI_Formula_Assisted = weight / Height_Squared
-    BMI_Formula_Completed = BMI_Formula_Assisted * 10000
-    BMI_Formula_Completed = str(BMI_Formula_Completed)
-    BMI_Formula_Completed = float(BMI_Formula_Completed)
-   
-def show_user():
-    global login 
-    user=input("Put in login")
-    if user in login.keys():
-        for key, value in login[user].items():
-            print(key + ':', value )
-        else:
-            print("user with this login is registered")
-
-def change_user()
-    global user
-    if user in login.keys():
-        while True:
-            if user in login.keys():
-                print("Login already exits, put the other one")
-            else:
-                break
-        height = float(input( "Your heigh:" ))/ 100
-        mass = float(input("Your weight: "))
-        sex = input("Your sex: ")
-        d1={"sex": sex, "age": age,"weight": weight, "height":height}
-        Height_Squared = height * height
-        BMI_Formula_Assisted = weight / Height_Squared
-        BMI_Formula_Completed = BMI_Formula_Assisted * 10000
-        BMI_Formula_Completed = str(BMI_Formula_Completed)
-        BMI_Formula_Completed = float(BMI_Formula_Completed)
-        
-    
-
-def add_update_user(func):
-    def add_update (*args,**kwargs):
-        height = float(input( "Your heigh:" ))/ 100
-        mass = float(input("Your weight: "))
-        sex = input("Your sex: ")
-        Height_Squared = height * height
-        BMI_Formula_Assisted = weight / Height_Squared
-        BMI_Formula_Completed = BMI_Formula_Assisted * 10000
-        BMI_Formula_Completed = str(BMI_Formula_Completed)
-        BMI_Formula_Completed = float(BMI_Formula_Completed)
-        return func(*args,heigh,mass, sex)
-    return add_update
-
-def delete():
-    global login
-    user=input("Delete user")
-    if user in login.keys():
-        del login(user)
-        print("Login is deleted")
-    else:
-        print("Login does not exist")
-
-def add_user(func):
-    def update (*args,**kwargs):
-        height = float(input( "Your heigh:" ))/ 100
-        mass = float(input("Your weight: "))
-        sex = input("Your sex: ")
-        Height_Squared = height * height
-        BMI_Formula_Assisted = weight / Height_Squared
-        BMI_Formula_Completed = BMI_Formula_Assisted * 10000
-        BMI_Formula_Completed = str(BMI_Formula_Completed)
-        BMI_Formula_Completed = float(BMI_Formula_Completed)
-        return func(*args,heigh,mass, sex)
-    return update
-
-def exit():
-    print("Goodbye")
-
-
-
-
-
-
+address_book = []
+print ("""Select operation: \n ------------------- \n [C] Add new user \n [R] Show user information \n [U] Update user information\n [D] Delete user \n ------------------- \n [L] Show all users \n [Q] Quit \n ------------------- \n Please enter your choice: \n """)
+while True:
+    choice = input("Choice: ")
+    if choice == str("C"):
+        address_book.append(AddressBook(input("Input name: "), input("Input age: "), input("Input height: "), input("Input weight: "), input("Input sex: ")))
+    elif choice == str("R"):
+        input("enter contact name: ")
+        pass
+    elif choice == str("U"):
+        pass
+    elif choice == str("D"):
+        pass
+    elif choice == str("L"):
+        print(*[contact for contact in address_book], sep="\n")
+    elif choice == str("Q"):
+        exit()
